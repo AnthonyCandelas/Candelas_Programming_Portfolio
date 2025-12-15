@@ -1,0 +1,25 @@
+Hack14 Prompts Log
+
+Prompt 1:
+"Build a C client for Battleship game at http://csce.unl.edu:8080/Battleship using login tsallinger2. Make HTTP GET/POST requests with JSON for NewGame and Move endpoints. Use libcurl."
+
+Response 1:
+Created battleship_client.c with curl HTTP functions, start_new_game() and make_move(). Added makefile linking -lcurl. Initial implementation uses simple move parameter.
+
+Prompt 2:
+"Compile and test the client. Fix any errors."
+
+Response 2:
+Built successfully. Fixed server contract: moves must be sent as form parameter 'move={JSON}' not raw JSON POST. Updated http_post_move() to send move=... payload.
+
+Prompt 3:
+"Add auto-play mode that plays aggressively until we win."
+
+Response 3:
+Added --auto flag with checkerboard hunt strategy. Fires at all even/odd parity squares then sweeps remaining. Detects win/loss from game_status in response.
+
+Prompt 4:
+"We're losing every game. Make it smarter to reduce shot cost and target better."
+
+Response 4:
+Implemented hunt-target strategy: checkerboard hunt, then when hit detected, enqueue adjacent neighbors (up/down/left/right) for targeting. Tracks board state (hit/miss/unknown). Achieved win: game_id=290d68ea, final score=2.

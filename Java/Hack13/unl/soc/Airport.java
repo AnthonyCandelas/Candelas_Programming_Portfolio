@@ -19,8 +19,8 @@ public class Airport {
     private String gpsId;
     private String type;
     private String name;
-    private double latitude;    /* degrees */
-    private double longitude;   /* degrees */
+    private double latitude;
+    private double longitude;
     private int elevationFeet;
     private String city;
     private String countryAbbrv;
@@ -57,8 +57,6 @@ public class Airport {
         this.countryAbbrv = countryAbbrv;
     }
 
-    /* no factory: keep API minimal and grader-compatible */
-
     /* Getters */
     public String getGpsId() { return gpsId; }
     public String getType() { return type; }
@@ -77,14 +75,14 @@ public class Airport {
     @Override
     public String toString() {
         return String.format("%-10s %-14s %-40s %7.2f %7.2f %d %s %s",
-                     gpsId == null ? "" : gpsId,
-                     type == null ? "" : type,
-                     name == null ? "" : name,
-                     latitude,
-                     longitude,
-                     elevationFeet,
-                     city == null ? "" : city,
-                     countryAbbrv == null ? "" : countryAbbrv);
+                             gpsId == null ? "" : gpsId,
+                             type == null ? "" : type,
+                             name == null ? "" : name,
+                             latitude,
+                             longitude,
+                             elevationFeet,
+                             city == null ? "" : city,
+                             countryAbbrv == null ? "" : countryAbbrv);
     }
 
     /**
@@ -111,10 +109,6 @@ public class Airport {
         return central * R;
     }
 
-    /**
-     * Compute estimated travel time (hours) across the provided stops
-     * using the average speed (km/h) and average layover time (hours).
-     */
     /**
      * Compute estimated travel time (hours) across the provided stops
      * using the average speed (km/h) and average layover time (hours).

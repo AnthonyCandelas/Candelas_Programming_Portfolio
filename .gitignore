@@ -13,6 +13,19 @@ obj/
 horse
 test_game
 a.out
+battleship
+airportReport
+test001
+test002
+test003
+kaprekarDemo
+kaprekarTest
+
+# Java
+*.class
+
+# mac debug bundles
+*.dSYM/
 
 # editor configs
 .vscode/
