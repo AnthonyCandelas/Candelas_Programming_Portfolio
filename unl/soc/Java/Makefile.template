@@ -1,0 +1,21 @@
+# Copy this into a Java assignment folder and rename to 'makefile'.
+# Use from Git Bash/WSL; adjust mkdir/rm if using cmd.exe.
+JAVAC := javac
+JAVA := java
+SRC := $(wildcard *.java)
+BIN := bin
+MAIN ?= Main
+
+all: compile
+
+$(BIN):
+	mkdir -p $(BIN)
+
+compile: $(BIN)
+	$(JAVAC) -d $(BIN) $(SRC)
+
+run: compile
+	$(JAVA) -cp $(BIN) unl.soc.$(MAIN)
+
+clean:
+	rm -rf $(BIN)

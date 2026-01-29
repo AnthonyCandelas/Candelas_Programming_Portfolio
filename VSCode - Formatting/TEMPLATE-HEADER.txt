@@ -1,0 +1,16 @@
+/*
+ * Name: Anthony Candelas
+ * Email: tsallinger2@unl.edu
+ * Date: DDMMMyyyy
+ * Lab/Task: <e.g., Hack09 - String Utilities>
+ *
+ * Description:
+ * <One to three sentences describing the file's purpose. Be factual and
+ * concise. Do NOT use phrases such as "AI-generated" or "human-friendly".>
+ *
+ * NOTE: If a function returns allocated memory, clearly document that the
+ * caller must free() it. On NULL input functions should document behavior
+ * (for example: "On NULL input returns NULL").
+ */
+
+// Copy this header into new files and replace the placeholders above.

@@ -1,0 +1,15 @@
+# POSIX Makefile (renamed from Makefile)
+CC=gcc
+CFLAGS=-std=c11 -Wall -Wextra
+LDLIBS=-lm
+
+SRC=airport.c airportTester.c
+OBJ=$(SRC:.c=.o)
+
+all: airportTester
+
+airportTester: $(SRC)
+	$(CC) $(CFLAGS) -o $@ $^ $(LDLIBS)
+
+clean:
+	rm -f airportTester $(OBJ)

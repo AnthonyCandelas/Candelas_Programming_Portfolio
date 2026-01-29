@@ -1,0 +1,8 @@
+CHANGELOG - FloodUtils.java
+
+- 2025-10-27: Updated behavior to match grader contract:
+  * convertFlow(List<Double>): now throws NullPointerException when the input
+    list is null or contains null elements (previously returned null).
+  * floodCapacity(double[][], double): now returns 0.0 for an empty grid
+    (zero rows); still returns Double.NaN for truly invalid inputs (null
+    array or null rows).

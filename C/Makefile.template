@@ -1,0 +1,22 @@
+# Copy this into a C assignment folder and rename to 'makefile'.
+CC := gcc
+CFLAGS := -std=c11 -Wall -Wextra -Werror -O2
+LDFLAGS :=
+TARGET ?= main
+
+SRC := $(wildcard *.c)
+OBJ := $(SRC:.c=.o)
+
+all: $(TARGET)
+
+$(TARGET): $(OBJ)
+	$(CC) $(OBJ) -o $@ $(LDFLAGS)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+run: $(TARGET)
+	./$(TARGET)
+
+clean:
+	rm -f $(TARGET) $(OBJ)

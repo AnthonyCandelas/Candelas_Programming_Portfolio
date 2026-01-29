@@ -1,0 +1,126 @@
+\documentclass[10pt]{exam}
+\printanswers
+\usepackage{epsfig,amssymb}
+\usepackage{xcolor}
+\definecolor{darkred}{rgb}{0.5,0,0}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\usepackage{hyperref}
+\usepackage{fullpage}
+\usepackage{tikz}
+\pagestyle{empty} 
+\usepackage{listings}
+\setlength{\parindent}{0pt} %
+\setlength{\parskip}{.25cm}
+\newcommand{\comment}[1]{}
+\boxedpoints
+\addpoints
+\usepackage{amsmath}
+\usepackage{algorithm2e}
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage{graphics}
+
+\pagestyle{headandfoot}
+\firstpageheader{\Large CSCE 235}{{\Large Assignment 1}}{\Large Spring 2026}
+
+\begin{document}
+
+\hrule
+
+\vspace{.50cm} Name
+\vspace{.50cm} \rule{4in}{.001in} \hfill 
+\\ NUID \rule{4.3in}{.001in}
+\vspace{.50cm}
+
+\textbf{Instructions} Follow instructions \emph{carefully}; failure to do so will result in points being deducted. You may write or type out your answers. Be sure to show sufficient work to justify your answer(s).
+
+
+\begin{questions}
+
+\question[6] Determine if each of the following sentences is a proposition. Justify your answer.
+\begin{parts}
+    \part The number 17 is a prime number.
+    \part $5 + 8 = 12$
+    \part Close the door.
+\end{parts}
+
+\begin{solution}
+    Enter your solution here:
+\end{solution}
+
+\question[12] Let the following propositions be defined as:
+\begin{itemize}
+  \item $d$: It's Valentine's Day.
+  \item $e$: You go on a Valentine’s Day excursion.
+  \item $a$: You eat chocolate and ice cream.
+\end{itemize}
+
+Express each of these compound propositions as an English sentence.
+
+\begin{parts}
+\part $ d \rightarrow a $
+\part $ \neg e \rightarrow a $
+\part $(d \rightarrow e) \wedge (d \rightarrow a)$
+\part $(a) \leftrightarrow (d \wedge e)$
+\end{parts}
+
+\begin{solution}
+    Enter your solution here:
+\end{solution}
+
+\question[6] Let the following propositions be defined as:
+\begin{itemize}
+  \item $w$: You wore your winter coat.
+  \item $v$: You visited an ice sculpture garden.
+  \item $d$: You drank hot cocoa.
+\end{itemize}
+
+Write these propositions using w, v, and d and logical connectives (including negations).
+\begin{parts}
+    \part If you visited an ice sculpture garden, then you wore your winter coat and drank hot cocoa.
+    \part If you didn't wear your winter coat, then you didn't visit the ice sculpture garden.
+\end{parts}
+
+\begin{solution}
+    Enter your solution here:
+\end{solution}
+
+\question[16] Show that the following conditional statement is a tautology by using a truth table.
+\begin{parts}
+\part $\left [ a \wedge  (a \rightarrow b) \right ] \rightarrow b$
+\part $(a \wedge b) \rightarrow (b \rightarrow a)$
+\part $\left[(a \lor b) \land (a \rightarrow c) \land (b \rightarrow c) \right] \rightarrow c$
+\part $\left[ \neg a \wedge (a \vee b)\right] \rightarrow b$
+\end{parts}
+
+\begin{solution}
+    Enter your solution here:
+\end{solution}
+
+\question[16] Prove by logical equivalences (without using a truth table) the following is a tautology. To get full credit, you must state which logical equivalences you used in each step.
+
+\begin{parts}
+\part $\left [ a \wedge  (a \rightarrow b) \right ] \rightarrow b$
+\part $(a \wedge b) \rightarrow (b \rightarrow a)$
+\part $\left[(a \lor b) \land (a \rightarrow c) \land (b \rightarrow c) \right] \rightarrow c$
+\part $\left[ \neg a \wedge (a \vee b)\right] \rightarrow b$
+\end{parts}
+
+\begin{solution}
+    Enter your solution here:
+\end{solution}
+
+\question[8] Show that the following are logically equivalent without using a truth table. To get full credit, you must state which logical equivalences you used in each step.
+
+\begin{parts}
+\part $\neg a \rightarrow (b \rightarrow c) \equiv b \rightarrow (a \vee c)$
+\part $\neg (\neg a \wedge b) \wedge (a \vee b) \equiv a$
+\end{parts}
+
+\begin{solution}
+    Enter your solution here:
+\end{solution}
+
+\end{questions}
+
+\end{document}
