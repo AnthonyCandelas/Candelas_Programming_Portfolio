@@ -1,0 +1,25 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "Candelas Programming Portfolio"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/__pycache__": true,
+      "**/*.class": true
+    },
+    "git.ignoreLimitWarning": true,
+    "latex-workshop.latex.autoBuild.run": "never"
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-vscode.cpptools",
+      "vscjava.vscode-java-pack",
+      "james-yu.latex-workshop"
+    ]
+  }
+}
